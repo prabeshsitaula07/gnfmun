@@ -13,10 +13,10 @@ const Navbar = () => {
     };
 
     return (
-        <header className="px-6 md:px-14 my-10">
+        <header className="px-14 my-10">
             <nav className="flex justify-between items-center border border-gray-30 px-4 py-4">
-                <a href="#" className="text-primary text-3xl font-bold">
-                    <img src={logo} alt="" className="h-24 w-auto mx-auto" />
+                <a href="#" className="text-primary text-3xl font-bold flex items-center">
+                    <img src={logo} alt="" className="h-24 w-auto" />
                     GNFMUN
                 </a>
                 {/* Navbar Links */}
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </ul>
                 {/* Hamburger Menu */}
                 <div
-                    className="md:hidden cursor-pointer z-30"
+                    className="md:hidden cursor-pointer"
                     onClick={toggleMenu}
                 >
                     <span

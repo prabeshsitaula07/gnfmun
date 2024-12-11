@@ -4,11 +4,11 @@ import profile from '../../assets/profile.png';
 
 const Blog: React.FC = () => (
     <>
-        <div className="relative text-white mx-6 md:mx-14 h-[477px]">
+        <div className="relative text-white mx-14 h-[477px]">
             <img src={blogimg} alt="blog" className="w-full h-full object-cover rounded-[20px]" />
             <div className="absolute top-0 left-0 w-full h-full bg-[#141624] opacity-40 rounded-[20px]" />
             <div className="mx-10 absolute bottom-10">
-                <h1 className="font-semibold text-xl md:text-4xl pb-4 lg:leading-10 max-w-[754px]" style={{ fontFamily: 'Work Sans, sans-serif' }}>
+                <h1 className="font-semibold text-4xl pb-4 leading-10 max-w-[754px]" style={{ fontFamily: 'Work Sans, sans-serif' }}>
                     Empowering future leaders through Model United Nations, fostering diplomacy, critical thinking, and global awareness.
                 </h1>
                 <div className="flex h-9 w-72 gap-5 items-center pt-6">
@@ -21,7 +21,7 @@ const Blog: React.FC = () => (
 
         {/*  */}
         <section className="text-gray-600 body-font">
-            <div className="container px-6 md:px-14 py-24 mx-auto">
+            <div className="container px-14 py-24 mx-auto">
                 <div className="flex flex-wrap -m-4">
                     {[
                         {
@@ -119,8 +119,8 @@ const Blog: React.FC = () => (
         </section>
 
         <section className="text-gray-600 body-font overflow-hidden">
-            <div className="container px-6 md:px-14 mx-auto">
-                <div className="flex flex-wrap">
+            <div className="container px-6 md:px-14 py-24 mx-auto">
+                <div className="flex flex-wrap -m-12">
                     {[
                         {
                             date: "date",
