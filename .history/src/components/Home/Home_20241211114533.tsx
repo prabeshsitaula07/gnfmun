@@ -6,7 +6,6 @@ export default function Home() {
     <div>
       <Blog/>
 
-
       <Typewriter
                   options={{
                     strings: ['React Developer', 'AI Enthusiast', 'ML Engineer To Be'],

@@ -1,5 +1,5 @@
-// import blogimg from '../../assets/homeImage.jpg';
-// import profile from '../../assets/profile.png';
+import blogimg from '../../assets/homeImage.jpg';
+import profile from '../../assets/profile.png';
 import logo from '../../assets/logo.png'
 
 const Blog: React.FC = () => (

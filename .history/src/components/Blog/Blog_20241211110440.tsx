@@ -1,11 +1,12 @@
-// import blogimg from '../../assets/homeImage.jpg';
-// import profile from '../../assets/profile.png';
-import logo from '../../assets/logo.png'
+import blogimg from '../../assets/homeImage.jpg';
+import profile from '../../assets/profile.png';
+
 
 const Blog: React.FC = () => (
     <>
-        {/* <div className="relative text-white container px-6 md:px-14 h-[477px]">
+        <div className="relative text-white container px-6 md:px-14 h-[477px]">
             <img src={blogimg} alt="blog" className="w-full h-full object-cover rounded-[20px]" />
+            {/* <div className="absolute top-0 left-0 w md:mx-14 h-full bg-[#141624] opacity-40 rounded-[20px]" /> */}
             <div className="mx-10 absolute bottom-10">
                 <h1 className="font-semibold text-xl md:text-4xl pb-4 lg:leading-10 max-w-[754px]" style={{ fontFamily: 'Work Sans, sans-serif' }}>
                     Empowering future leaders through Model United Nations, fostering diplomacy, critical thinking, and global awareness.
@@ -16,7 +17,7 @@ const Blog: React.FC = () => (
                     <h4 className="font-normal text-base leading-6">May 15, 2024</h4>
                 </div>
             </div>
-        </div> */}
+        </div>
 
         {/*  */}
         <section className="text-gray-600 body-font">
@@ -125,7 +126,7 @@ const Blog: React.FC = () => (
                             date: "date",
                             title: "Roof party normcore before they sold out, cornhole vape",
                             description: "Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland...",
-                            author: { role: "UI DEVELOPER", img: logo },
+                            author: { name: "Holden Caulfield", role: "UI DEVELOPER", img: "https://dummyimage.com/104x104" },
                             comments: "1.2K",
                             likes: "6"
                         },
@@ -133,7 +134,7 @@ const Blog: React.FC = () => (
                             date: "date",
                             title: "Pinterest DIY dreamcatcher gentrify single-origin coffee",
                             description: "Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland...",
-                            author: { role: "DESIGNER", img: logo },
+                            author: { name: "Alper Kamu", role: "DESIGNER", img: "https://dummyimage.com/103x103" },
                             comments: "1.2K",
                             likes: "6"
                         }
@@ -163,8 +164,9 @@ const Blog: React.FC = () => (
                             </div>
                             <a className="inline-flex items-center">
                                 <img alt="blog" src={blog.author.img} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
-                                <span className="flex-grow flex flex-col pl-4 items-center">
-                                    <span className="title-font font-medium text-gray-900">GNFMUN</span>
+                                <span className="flex-grow flex flex-col pl-4">
+                                    <span className="title-font font-medium text-gray-900">{blog.author.name}</span>
+                                    <span className="text-gray-400 text-xs tracking-widest mt-0.5">{blog.author.role}</span>
                                 </span>
                             </a>
                         </div>

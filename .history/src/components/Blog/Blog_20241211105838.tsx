@@ -1,11 +1,12 @@
-// import blogimg from '../../assets/homeImage.jpg';
-// import profile from '../../assets/profile.png';
-import logo from '../../assets/logo.png'
+import blogimg from '../../assets/homeImage.jpg';
+import profile from '../../assets/profile.png';
+
 
 const Blog: React.FC = () => (
     <>
-        {/* <div className="relative text-white container px-6 md:px-14 h-[477px]">
+        <div className="relative text-white mx-1 h-[477px]">
             <img src={blogimg} alt="blog" className="w-full h-full object-cover rounded-[20px]" />
+            <div className="absolute top-0 left-0 w-full h-full bg-[#141624] opacity-40 rounded-[20px]" />
             <div className="mx-10 absolute bottom-10">
                 <h1 className="font-semibold text-xl md:text-4xl pb-4 lg:leading-10 max-w-[754px]" style={{ fontFamily: 'Work Sans, sans-serif' }}>
                     Empowering future leaders through Model United Nations, fostering diplomacy, critical thinking, and global awareness.
@@ -16,7 +17,7 @@ const Blog: React.FC = () => (
                     <h4 className="font-normal text-base leading-6">May 15, 2024</h4>
                 </div>
             </div>
-        </div> */}
+        </div>
 
         {/*  */}
         <section className="text-gray-600 body-font">
@@ -24,7 +25,7 @@ const Blog: React.FC = () => (
                 <div className="flex flex-wrap -m-4">
                     {[
                         {
-                            img: "https://www.un.org/sites/un2.un.org/files/styles/3x2-front-thumbnail/public/field/image/model_un_landing_page.jpg",
+                            img: "https://dummyimage.com/720x400",
                             date: "12 December, 2024",
                             title: "The Catalyzer",
                             description: "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
@@ -32,7 +33,7 @@ const Blog: React.FC = () => (
                             comments: "6",
                         },
                         {
-                            img: "https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/2019/12/mun_club.jpg?c=f753efbf84f05c34099450a730343c18",
+                            img: "https://dummyimage.com/720x400",
                             date: "12 December, 2024",
                             title: "The Innovator",
                             description: "Vexillologist yr glossier hella fam hella brooklyn snackwave direct trade microdosing.",
@@ -40,7 +41,7 @@ const Blog: React.FC = () => (
                             comments: "12",
                         },
                         {
-                            img: "https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/screenshot__2.png?c=208ccd2564d46e0f19c6ff859b2cc555",
+                            img: "https://dummyimage.com/720x400",
                             date: "12 December, 2024",
                             title: "The Visionary",
                             description: "Hammock tumeric post-ironic live-edge stumptown aesthetic lyft raw denim snackwave fam.",
@@ -125,7 +126,7 @@ const Blog: React.FC = () => (
                             date: "date",
                             title: "Roof party normcore before they sold out, cornhole vape",
                             description: "Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland...",
-                            author: { role: "UI DEVELOPER", img: logo },
+                            author: { name: "Holden Caulfield", role: "UI DEVELOPER", img: "https://dummyimage.com/104x104" },
                             comments: "1.2K",
                             likes: "6"
                         },
@@ -133,7 +134,7 @@ const Blog: React.FC = () => (
                             date: "date",
                             title: "Pinterest DIY dreamcatcher gentrify single-origin coffee",
                             description: "Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland...",
-                            author: { role: "DESIGNER", img: logo },
+                            author: { name: "Alper Kamu", role: "DESIGNER", img: "https://dummyimage.com/103x103" },
                             comments: "1.2K",
                             likes: "6"
                         }
@@ -163,8 +164,9 @@ const Blog: React.FC = () => (
                             </div>
                             <a className="inline-flex items-center">
                                 <img alt="blog" src={blog.author.img} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
-                                <span className="flex-grow flex flex-col pl-4 items-center">
-                                    <span className="title-font font-medium text-gray-900">GNFMUN</span>
+                                <span className="flex-grow flex flex-col pl-4">
+                                    <span className="title-font font-medium text-gray-900">{blog.author.name}</span>
+                                    <span className="text-gray-400 text-xs tracking-widest mt-0.5">{blog.author.role}</span>
                                 </span>
                             </a>
                         </div>
@@ -172,6 +174,7 @@ const Blog: React.FC = () => (
                 </div>
             </div>
         </section>
+
     </>
 );
 

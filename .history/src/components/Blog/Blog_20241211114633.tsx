@@ -1,11 +1,12 @@
-// import blogimg from '../../assets/homeImage.jpg';
-// import profile from '../../assets/profile.png';
+import blogimg from '../../assets/homeImage.jpg';
+import profile from '../../assets/profile.png';
 import logo from '../../assets/logo.png'
 
 const Blog: React.FC = () => (
     <>
-        {/* <div className="relative text-white container px-6 md:px-14 h-[477px]">
+        <div className="relative text-white container px-6 md:px-14 h-[477px]">
             <img src={blogimg} alt="blog" className="w-full h-full object-cover rounded-[20px]" />
+            {/* <div className="absolute top-0 left-0 w md:mx-14 h-full bg-[#141624] opacity-40 rounded-[20px]" /> */}
             <div className="mx-10 absolute bottom-10">
                 <h1 className="font-semibold text-xl md:text-4xl pb-4 lg:leading-10 max-w-[754px]" style={{ fontFamily: 'Work Sans, sans-serif' }}>
                     Empowering future leaders through Model United Nations, fostering diplomacy, critical thinking, and global awareness.
@@ -16,7 +17,7 @@ const Blog: React.FC = () => (
                     <h4 className="font-normal text-base leading-6">May 15, 2024</h4>
                 </div>
             </div>
-        </div> */}
+        </div>
 
         {/*  */}
         <section className="text-gray-600 body-font">

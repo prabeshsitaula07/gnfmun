@@ -40,7 +40,7 @@ const Navbar = () => {
                 <span className="text-white font-semibold">Call us: +123 456 7890 | Email: info@example.com</span>
             </div>
 
-            <nav className="flex justify-between items-center border border-gray-30 mt-1 px-4">
+            <nav className="flex justify-between items-center border border-gray-30 px-4 w-full">
                 <a href="#">
                     <img src={logo} alt="" className="h-24 w-auto mx-auto" />
                 </a>

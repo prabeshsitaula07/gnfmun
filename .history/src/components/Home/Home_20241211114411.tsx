@@ -1,11 +1,9 @@
 import Blog from "../Blog/Blog";
-import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   return (
     <div>
       <Blog/>
-
 
       <Typewriter
                   options={{
@@ -15,6 +13,7 @@ export default function Home() {
                     cursor: '|',
                     delay: 75,
                     deleteSpeed: 50,
+                    pauseFor: 2000,
                   }}
                 />
     </div>

@@ -31,16 +31,16 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header className="px-6 md:px-14 my-10 fixed w-full bg-white z-50">
+        <header className="my-10 fixed w-full bg-white z-50">
             {/* Contact Info */}
             <div
-                className={`fixed top-0 left-0 w-full bg-primary px-6 py-3 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
+                className={`fixed top-0 left-0 w-full bg-primary px-6 py-2 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
                     }`}
             >
-                <span className="text-white font-semibold">Call us: +123 456 7890 | Email: info@example.com</span>
+                <span className="text-black font-semibold">Call us: +123 456 7890 | Email: info@example.com</span>
             </div>
 
-            <nav className="flex justify-between items-center border border-gray-30 mt-1 px-4">
+            <nav className="flex justify-between items-center border border-gray-30 px-4 py-4 px-6 md:px-14 ">
                 <a href="#">
                     <img src={logo} alt="" className="h-24 w-auto mx-auto" />
                 </a>
