@@ -40,7 +40,7 @@ const Navbar = () => {
                     }`}
             >
                 <div className="flex items-center justify-center text-white font-semibold gap-4">
-                    <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +977 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
+                    <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +123 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
                 </div>
             </div>
 
