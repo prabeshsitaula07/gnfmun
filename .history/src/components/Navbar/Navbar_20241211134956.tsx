@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* navlinks */}
-            <nav className="flex justify-between items-center px-4 border-b">
+            <nav className="flex justify-between items-center px-4 border-b fixed bg-white w-full">
                 <Link to="/">
                     <img src={logo} alt="" className="h-24 w-auto mx-auto" />
                 </Link>
@@ -115,7 +115,6 @@ const Navbar = () => {
 
 
         </header>
-        
     );
 };
 

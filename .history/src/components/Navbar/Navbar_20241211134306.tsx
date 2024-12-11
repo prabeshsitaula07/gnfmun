@@ -33,17 +33,17 @@ const Navbar = () => {
     }, []);
 
     return (
-
+         {/* Contact Info */}
+         <div
+         className={`fixed top-0 left-0 w-full bg-primary px-6 py-3 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
+             }`}
+     >
+         <div className="flex items-center justify-center text-white font-semibold gap-4">
+             <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +977 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
+         </div>
+     </div>
         <header className="px-6 md:px-14 my-10 fixed w-full bg-white z-50">
-            {/* Contact Info */}
-            <div
-                className={`fixed top-0 left-0 w-full bg-primary px-6 py-3 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
-                    }`}
-            >
-                <div className="flex items-center justify-center text-white font-semibold gap-4">
-                    <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +977 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
-                </div>
-            </div>
+
             {/* navlinks */}
             <nav className="flex justify-between items-center px-4 border-b">
                 <Link to="/">
@@ -115,7 +115,6 @@ const Navbar = () => {
 
 
         </header>
-        
     );
 };
 

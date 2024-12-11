@@ -33,8 +33,8 @@ const Navbar = () => {
     }, []);
 
     return (
-
         <header className="px-6 md:px-14 my-10 fixed w-full bg-white z-50">
+
             {/* Contact Info */}
             <div
                 className={`fixed top-0 left-0 w-full bg-primary px-6 py-3 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
@@ -44,6 +44,7 @@ const Navbar = () => {
                     <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +977 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
                 </div>
             </div>
+
             {/* navlinks */}
             <nav className="flex justify-between items-center px-4 border-b">
                 <Link to="/">
@@ -51,28 +52,28 @@ const Navbar = () => {
                 </Link>
                 {/* Navbar Links */}
                 <ul
-                    className={`flex flex-col md:flex-row md:space-x-8 md:w-auto items-center md:transform-none transition-transform duration-300 font-primaryfont text-xl font-semibold ${isMenuOpen
+                    className={`flex flex-col md:flex-row md:static md:space-x-8 md:w-auto items-center md:transform-none transition-transform duration-300 font-primaryfont text-xl font-semibold ${isMenuOpen
                         ? "absolute top-[6rem] left-0 w-full bg-white shadow-lg z-20"
                         : "hidden md:flex"
                         }`}
                 >
                     <li className="my-4 md:my-0">
-                        <Link
-                            to="/"
+                        <a
+                            href="#"
                             className="text-black hover:text-primary"
                             onClick={closeMenu}
                         >
                             Home
-                        </Link>
+                        </a>
                     </li>
                     <li className="my-4 md:my-0">
-                        <Link
-                            to="/about/gallery"
+                        <a
+                            href="#"
                             className="text-black hover:text-primary"
                             onClick={closeMenu}
                         >
                             About
-                        </Link>
+                        </a>
                     </li>
                     <li className="my-4 md:my-0">
                         <a
@@ -112,10 +113,7 @@ const Navbar = () => {
                     ></span>
                 </div>
             </nav>
-
-
         </header>
-        
     );
 };
 

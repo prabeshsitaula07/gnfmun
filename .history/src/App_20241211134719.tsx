@@ -7,12 +7,12 @@ import Layout from "./components/Layout/Layout";
 export default function App() {
   return (
     <Router basename="/gnfmun">
-      {/* Navbar always present */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Layout><Home /></Layout>} />
-        <Route path="/about/gallery" element={<Layout><Gallery /></Layout>} />
-      </Routes>
-    </Router>
+                {/* Navbar always present */}
+                <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Layout><Home /></Layout>} />
+    <Route path="/about/gallery" element={<Layout><Gallery /></Layout>} />
+                    </Routes>
+        </Router>
   )
 }

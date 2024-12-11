@@ -33,17 +33,8 @@ const Navbar = () => {
     }, []);
 
     return (
-
         <header className="px-6 md:px-14 my-10 fixed w-full bg-white z-50">
-            {/* Contact Info */}
-            <div
-                className={`fixed top-0 left-0 w-full bg-primary px-6 py-3 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
-                    }`}
-            >
-                <div className="flex items-center justify-center text-white font-semibold gap-4">
-                    <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +977 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
-                </div>
-            </div>
+
             {/* navlinks */}
             <nav className="flex justify-between items-center px-4 border-b">
                 <Link to="/">
@@ -51,7 +42,7 @@ const Navbar = () => {
                 </Link>
                 {/* Navbar Links */}
                 <ul
-                    className={`flex flex-col md:flex-row md:space-x-8 md:w-auto items-center md:transform-none transition-transform duration-300 font-primaryfont text-xl font-semibold ${isMenuOpen
+                    className={`flex flex-col md:flex-row  md:space-x-8 md:w-auto items-center md:transform-none transition-transform duration-300 font-primaryfont text-xl font-semibold ${isMenuOpen
                         ? "absolute top-[6rem] left-0 w-full bg-white shadow-lg z-20"
                         : "hidden md:flex"
                         }`}
@@ -113,9 +104,18 @@ const Navbar = () => {
                 </div>
             </nav>
 
+            
+            {/* Contact Info */}
+            <div
+                className={`fixed top-0 left-0 w-full bg-primary px-6 py-3 text-center text-sm transition-transform duration-300 ${isScrolled ? "translate-y-0" : "-translate-y-full"
+                    }`}
+            >
+                <div className="flex items-center justify-center text-white font-semibold gap-4">
+                    <span className="flex items-center"><FaPhoneAlt className="mr-2" /> +977 014502020</span>|<span className="flex items-center"><FaEnvelope className="mr-2" /> info@gnfmun.com</span>
+                </div>
+            </div>
 
         </header>
-        
     );
 };
 
