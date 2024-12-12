@@ -37,10 +37,10 @@ const Navbar: React.FC = () => {
           </div>
           <div className="flex items-center space-x-2">
             <span>Follow us:</span>
-            <a href="#" className="text-white hover:scale-125">
+            <a href="#" className="text-white hover:text-red">
               <FaFacebook className="inline-block" />
             </a>
-            <a href="#" className="text-white hover:scale-125">
+            <a href="#" className="text-white hover:text-blue-400">
               <FaTwitter className="inline-block" />
             </a>
           </div>

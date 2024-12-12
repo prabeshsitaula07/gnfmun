@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
             <a href="#" className="text-white hover:scale-125">
               <FaFacebook className="inline-block" />
             </a>
-            <a href="#" className="text-white hover:scale-125">
+            <a href="#" className="text-white hover:scale-105">
               <FaTwitter className="inline-block" />
             </a>
           </div>

@@ -2,6 +2,8 @@ import logo from '../../assets/logo.png'
 
 const Blog: React.FC = () => (
     <>
+      
+
         {/*  */}
         <section className="text-gray-600 body-font">
             <div className="container px-6 md:px-14 py-24 mx-auto">

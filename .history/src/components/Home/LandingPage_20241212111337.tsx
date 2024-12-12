@@ -33,23 +33,23 @@ const LandingPage = () => {
 
     return (
         <div
-            className="relative h-screen w-full text-white"
+        className="relative h-screen w-full text-white"
+        style={{
+            backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            transition: "background-image 1s ease-in-out",
+        }}
+    >
+        {/* Add a dark overlay */}
+        <div
+            className="absolute inset-0 bg-black opacity-30"
             style={{
-                backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                transition: "background-image 1s ease-in-out",
+                mixBlendMode: "multiply", // Optional: Enhances the overlay's interaction with the image
             }}
         >
-            {/* Add a dark overlay */}
-            <div
-                className="absolute inset-0 bg-black opacity-30"
-                style={{
-                    mixBlendMode: "multiply", // Optional: Enhances the overlay's interaction with the image
-                }}
-            >
 
-            </div>
+        </div>
 
             <div className="absolute bottom-20 px-12 rounded-lg">
                 <h1 className="md:text-6xl font-bold">
@@ -64,9 +64,8 @@ const LandingPage = () => {
                     />
                 </h1>
                 <p className="mt-4 text-lg md:text-xl">Your journey starts here.</p>
-                <button className="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group py-2 px-2 my-4 ring-1 ring-primary">
-                    <span className="w-56 h-48 rounded bg-primary absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                    <span className="relative w-full text-left text-primary transition-colors duration-300 ease-in-out group-hover:text-white text-lg">Get Started</span>
+                <button className="mt-6 px-6 py-3 bg-primary font-semibold text-white rounded-lg hover:bg-white hover:ring-primary hover:ring-1 hover:text-primary transition duration-150">
+                    Get Started
                 </button>
             </div>
         </div>

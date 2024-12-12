@@ -2,6 +2,8 @@ import logo from '../../assets/logo.png'
 
 const Blog: React.FC = () => (
     <>
+      
+
         {/*  */}
         <section className="text-gray-600 body-font">
             <div className="container px-6 md:px-14 py-24 mx-auto">
@@ -33,7 +35,7 @@ const Blog: React.FC = () => (
                         },
                     ].map((card, index) => (
                         <div key={index} className="p-4 md:w-1/3">
-                            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:cursor-pointer">
+                            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img
                                     className="lg:h-48 md:h-36 w-full object-cover object-center"
                                     src={card.img}
@@ -48,7 +50,7 @@ const Blog: React.FC = () => (
                                     </h1>
                                     <p className="leading-relaxed mb-3">{card.description}</p>
                                     <div className="flex items-center flex-wrap">
-                                        <a className="text-primary inline-flex items-center md:mb-2 lg:mb-0">
+                                        <a className="text-primary inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer">
                                             Learn More
                                             <svg
                                                 className="w-4 h-4 ml-2"

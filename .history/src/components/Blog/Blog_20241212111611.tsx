@@ -2,6 +2,8 @@ import logo from '../../assets/logo.png'
 
 const Blog: React.FC = () => (
     <>
+      
+
         {/*  */}
         <section className="text-gray-600 body-font">
             <div className="container px-6 md:px-14 py-24 mx-auto">
@@ -35,7 +37,7 @@ const Blog: React.FC = () => (
                         <div key={index} className="p-4 md:w-1/3">
                             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:cursor-pointer">
                                 <img
-                                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                                    className="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-105"
                                     src={card.img}
                                     alt="blog"
                                 />
