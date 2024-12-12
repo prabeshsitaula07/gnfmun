@@ -1,7 +1,5 @@
 // ResponsiveNavbar.tsx
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
 import logo from '../../assets/logo.png'
 
 const Navbar: React.FC = () => {
@@ -29,20 +27,16 @@ const Navbar: React.FC = () => {
     <header className="w-full fixed top-0 z-50">
       {/* Contact Info Section */}
       {!isScrolled && (
-        <div className="bg-primary text-white py-2 px-12 text-lg flex justify-between items-center font-primaryfont">
+        <div className="bg-gray-800 text-white py-2 px-12 text-sm flex justify-between items-center">
           <div>
             <span>Email: info@example.com</span>
             <span className="mx-4">|</span>
-            <span>Phone: +977 01-450-2020</span>
+            <span>Phone: +123-456-7890</span>
           </div>
-          <div className="flex items-center space-x-2">
-            <span>Follow us:</span>
-            <a href="#" className="text-white hover:text-blue-500">
-              <FaFacebook className="inline-block" />
-            </a>
-            <a href="#" className="text-white hover:text-blue-400">
-              <FaTwitter className="inline-block" />
-            </a>
+          <div>
+            <span>Follow us: </span>
+            <a href="#" className="mx-1 hover:underline">Facebook</a>
+            <a href="#" className="mx-1 hover:underline">Twitter</a>
           </div>
         </div>
       )}
@@ -55,29 +49,25 @@ const Navbar: React.FC = () => {
       >
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="text-2xl font-bold text-blue-600 block">
-            <Link to='/'>
-            <img src={logo} alt="gnfmun" className="h-20" />
-            </Link>
-          </div>
+          <div className="text-2xl font-bold text-blue-600 block"></div>
 
           {/* Navigation Links */}
           <ul
-            className={`md:flex space-x-6 text-gray-700 font-medium text-lg font-navfont ${
+            className={`md:flex space-x-6 text-gray-700 font-medium ${
               isMenuOpen ? "block" : "hidden"
             } md:block md:static bg-white w-full md:w-auto left-0 top-full md:top-auto md:translate-x-0 transition-all duration-300`}
           >
             <li>
-              <Link to="#" className="block md:inline-block px-4 py-2 hover:text-primary">Home</Link>
+              <a href="#" className="block md:inline-block px-4 py-2 hover:text-blue-600">Home</a>
             </li>
             <li>
-              <Link to="/about/gallery" className="block md:inline-block px-4 py-2 hover:text-primary">About</Link>
+              <a href="#" className="block md:inline-block px-4 py-2 hover:text-blue-600">About</a>
             </li>
             <li>
-              <Link to="#" className="block md:inline-block px-4 py-2 hover:text-primary">Services</Link>
+              <a href="#" className="block md:inline-block px-4 py-2 hover:text-blue-600">Services</a>
             </li>
             <li>
-              <Link to="#" className="block md:inline-block px-4 py-2 hover:text-primary">Contact</Link>
+              <a href="#" className="block md:inline-block px-4 py-2 hover:text-blue-600">Contact</a>
             </li>
           </ul>
 

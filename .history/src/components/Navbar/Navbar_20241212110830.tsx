@@ -29,11 +29,11 @@ const Navbar: React.FC = () => {
     <header className="w-full fixed top-0 z-50">
       {/* Contact Info Section */}
       {!isScrolled && (
-        <div className="bg-primary text-white py-2 px-12 text-lg flex justify-between items-center font-primaryfont">
+        <div className="bg-primary text-white py-2 px-12 text-lg flex justify-between items-center">
           <div>
             <span>Email: info@example.com</span>
             <span className="mx-4">|</span>
-            <span>Phone: +977 01-450-2020</span>
+            <span>Phone: +123-456-7890</span>
           </div>
           <div className="flex items-center space-x-2">
             <span>Follow us:</span>

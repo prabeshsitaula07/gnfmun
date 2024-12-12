@@ -14,7 +14,6 @@ export default {
     },
     fontFamily:{
       'navfont': "Montserrat",
-      'primaryfont': 'Roboto',
     },
   },
   plugins: [

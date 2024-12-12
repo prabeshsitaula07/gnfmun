@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           <div>
             <span>Email: info@example.com</span>
             <span className="mx-4">|</span>
-            <span>Phone: +977 01-450-2020</span>
+            <span>Phone: +977 01-4502020</span>
           </div>
           <div className="flex items-center space-x-2">
             <span>Follow us:</span>

@@ -33,25 +33,16 @@ const LandingPage = () => {
 
     return (
         <div
-        className="relative h-screen w-full text-white"
-        style={{
-            backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            transition: "background-image 1s ease-in-out",
-        }}
-    >
-        {/* Add a dark overlay */}
-        <div
-            className="absolute inset-0 bg-black opacity-30"
+            className="relative h-screen w-full text-white"
             style={{
-                mixBlendMode: "multiply", // Optional: Enhances the overlay's interaction with the image
+                backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                transition: "background-image 1s ease-in-out",
+                
             }}
         >
-
-        </div>
-
-            <div className="absolute bottom-20 px-12 rounded-lg">
+            <div className="absolute bottom-6 px-12 rounded-lg">
                 <h1 className="md:text-6xl font-bold">
                     <Typewriter
                         options={{

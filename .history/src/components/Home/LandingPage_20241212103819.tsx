@@ -43,15 +43,12 @@ const LandingPage = () => {
     >
         {/* Add a dark overlay */}
         <div
-            className="absolute inset-0 bg-black opacity-30"
+            className="absolute inset-0 bg-black opacity-50"
             style={{
                 mixBlendMode: "multiply", // Optional: Enhances the overlay's interaction with the image
             }}
-        >
-
-        </div>
-
-            <div className="absolute bottom-20 px-12 rounded-lg">
+        ></div>
+            <div className="absolute bottom-6 px-12 rounded-lg">
                 <h1 className="md:text-6xl font-bold">
                     <Typewriter
                         options={{

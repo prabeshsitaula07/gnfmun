@@ -13,8 +13,7 @@ export default {
       'red': '#FF0000',
     },
     fontFamily:{
-      'navfont': "Montserrat",
-      'primaryfont': 'Roboto',
+      'primaryfont': "Montserrat",
     },
   },
   plugins: [

@@ -10,11 +10,10 @@ export default {
     },
     colors: {
       'primary': '#3495d0',
-      'red': '#FF0000',
+      'red'
     },
     fontFamily:{
-      'navfont': "Montserrat",
-      'primaryfont': 'Roboto',
+      'primaryfont': "Montserrat",
     },
   },
   plugins: [

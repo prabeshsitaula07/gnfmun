@@ -47,11 +47,8 @@ const LandingPage = () => {
             style={{
                 mixBlendMode: "multiply", // Optional: Enhances the overlay's interaction with the image
             }}
-        >
-
-        </div>
-
-            <div className="absolute bottom-20 px-12 rounded-lg">
+        ></div>
+            <div className="absolute bottom-6 px-12 rounded-lg">
                 <h1 className="md:text-6xl font-bold">
                     <Typewriter
                         options={{

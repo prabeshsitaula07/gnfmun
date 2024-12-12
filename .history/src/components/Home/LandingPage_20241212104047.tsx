@@ -51,7 +51,7 @@ const LandingPage = () => {
 
         </div>
 
-            <div className="absolute bottom-20 px-12 rounded-lg">
+            <div className="absolute bottom-10 px-12 rounded-lg">
                 <h1 className="md:text-6xl font-bold">
                     <Typewriter
                         options={{
