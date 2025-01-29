@@ -1,5 +1,4 @@
 import Blog from "../Blog/Blog";
-import ChairmanSpeech from "../ChairmanSays/ChairmanSpeech";
 import Description from "../Description/Description";
 import MakeDifference from "../MakeDifference/MakeDifference";
 import SponsorChild from "../SponsorChild/SponsorChild";
@@ -12,7 +11,7 @@ export default function Home() {
       <SponsorChild />
       <Description />
       <MakeDifference/>
-      <ChairmanSpeech/>
+      </>
       <Blog />
     </div>
   )
