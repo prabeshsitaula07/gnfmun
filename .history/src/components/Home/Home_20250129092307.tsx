@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <LandingPage />
       <SponsorChild />
-      <Description />
+      <Description/>
       <Blog />
     </div>
   )
