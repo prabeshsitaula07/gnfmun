@@ -3,7 +3,6 @@ import ChairmanSpeech from "../ChairmanSays/ChairmanSpeech";
 import Description from "../Description/Description";
 import MakeDifference from "../MakeDifference/MakeDifference";
 import SponsorChild from "../SponsorChild/SponsorChild";
-import Testimonials from "../Testimonials/Testimonials";
 import LandingPage from "./LandingPage";
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
       <Description />
       <MakeDifference/>
       <ChairmanSpeech/>
-      <Testimonials/>
+      
       <Blog />
     </div>
   )
