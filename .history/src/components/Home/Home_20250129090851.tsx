@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <LandingPage />
-      <SponsorChild />
+      <SponsorChild/>
       <Blog />
     </div>
   )

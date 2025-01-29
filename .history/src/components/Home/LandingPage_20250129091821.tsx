@@ -52,7 +52,7 @@ const LandingPage = () => {
             </div>
 
             <div className="absolute bottom-20 px-12 rounded-lg">
-                <h1 className="text-5xl md:text-6xl font-bold">
+                <h1 className="text- md:text-6xl font-bold">
                     <Typewriter
                         options={{
                             strings: foregroundContent,
