@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Gallery from "./components/AboutUs/Gallery";
 import Layout from "./components/Layout/Layout";
-import Footer from "./components/Footer/Footer";
+import Footer  from "flowbite-react";
 
 export default function App() {
   return (
