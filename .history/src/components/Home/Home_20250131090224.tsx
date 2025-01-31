@@ -2,7 +2,6 @@ import Blog from "../Blog/Blog";
 import ChairmanSpeech from "../ChairmanSays/ChairmanSpeech";
 import Description from "../Description/Description";
 import MakeDifference from "../MakeDifference/MakeDifference";
-import Partner from "../Partner/Partner";
 import SponsorChild from "../SponsorChild/SponsorChild";
 import Testimonials from "../Testimonials/Testimonials";
 import LandingPage from "./LandingPage";
@@ -16,7 +15,7 @@ export default function Home() {
       <MakeDifference/>
       <ChairmanSpeech/>
       <Testimonials/>
-      <Partner/>
+      </>
       <Blog />
     </div>
   )
