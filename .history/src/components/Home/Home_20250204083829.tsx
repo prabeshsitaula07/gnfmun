@@ -36,7 +36,7 @@ export default function Home() {
         <Partner />
       </motion.div>
       <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{ once: true }}>
-        <Contact />
+        <Partner />
       </motion.div>
   
       {/* <Blog /> */}
