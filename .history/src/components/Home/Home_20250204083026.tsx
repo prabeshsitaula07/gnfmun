@@ -8,8 +8,8 @@ import Testimonials from "../Testimonials/Testimonials";
 import LandingPage from "./LandingPage";
 
 const fadeIn = {
-  hidden: { opacity: 0, y: 150 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, y:  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
 };
 
 export default function Home() {
