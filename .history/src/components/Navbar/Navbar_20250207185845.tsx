@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
           isScrolled ? "sticky top-0" : ""
         }`}
       >
-        <div className="mx-auto flex justify-between items-center">
+        <div className="px-12 mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="text-2xl font-bold text-blue-600 block">
             <Link to='/'>
